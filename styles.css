@@ -1,6 +1,7 @@
 html, body{
     /*overflow: hidden; /*hiding scrollbars*/
     margin: 0;
+    font-family: "mulish", serif;
 }
 
 .container{
