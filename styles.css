@@ -1,0 +1,126 @@
+html, body{
+    /*overflow: hidden; /*hiding scrollbars*/
+    margin: 0;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+}
+/* left column */
+.compose-button{
+    color: white;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 100%;
+    min-width:120px
+}
+.chrome-icon{
+    padding-right: 10px;
+}
+.email-left{
+    background-color: #423e37;
+    color: #c3c2c0;
+    padding-left: 30px;
+}
+.inbox-options{
+    line-height: 40px;
+}
+.welcome{
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+
+
+/*Middle column*/
+.email-center{
+    background-color: #f4f3ef;
+    width: 100%;
+}
+.all-emails{
+    font-size: 13px;
+    margin-top: 30px;
+}
+.email-2{ background-color: #ffffff;
+padding: 4px;
+margin-top: 40px;
+border-radius: 10px;
+}
+.email-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.searchContainer {
+    display: inline-flex;
+    position: relative;
+    border: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 90%;
+    margin-top: 50px;
+  }
+.searchIcon {
+    padding: 0.5rem;
+  }
+  
+.searchBox {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+  }
+.sender{
+      font-weight: bold;
+      font-size: 15px;
+    
+  }
+.spacing{
+      margin-top: 40px;
+  }
+
+
+
+
+  /* Start of right column*/
+
+  .email-right{
+    background-color: #ffffff;
+    height: 100vh;
+}
+.address{
+    font-size: 10px;
+}
+.amazon-logo{
+height:200px;
+margin: 0;
+
+}
+.compose-section{
+    margin-top: 150px;
+}
+.email-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.email-options{
+    margin-right: 20px;
+    padding: px;
+}
+hr{
+    border: 1px solid black;
+    width: 90%;
+}
+
+.reply-box{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 180px;
+    padding: 15px;
+    width: 80%;
+}
+.fa-paperclip{
+    font-size: 30px;
+}
