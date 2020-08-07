@@ -13,8 +13,8 @@ html, body{
     border: none;
     margin-top: 30px;
     margin-bottom: 60px;
-    width: 100%;
-    min-width:120px
+    width: 150px;
+
 }
 .chrome-icon{
     padding-right: 10px;
@@ -26,6 +26,12 @@ html, body{
 }
 .inbox-options{
     line-height: 40px;
+}
+.email-option-links{
+    color: white;
+}
+a:hover{
+    color:rgb(0, 0, 0);
 }
 .welcome{
     margin-top: 25px;
@@ -42,6 +48,10 @@ html, body{
 .all-emails{
     font-size: 13px;
     margin-top: 30px;
+    padding-left: 10px;
+}
+.email-links{
+    color: black;
 }
 .email-2{ background-color: #ffffff;
 padding: 4px;
@@ -68,7 +78,7 @@ border-radius: 10px;
   
 .searchBox {
     border: 0;
-    padding: 0.5rem 0.5rem 0.5rem 0;
+    padding:5px;
     flex: 1;
   }
 .sender{
@@ -85,20 +95,31 @@ border-radius: 10px;
 
   /* Start of right column*/
 
-  .email-right{
+.email-right{
     background-color: #ffffff;
     height: 100vh;
 }
 .address{
     font-size: 10px;
+    padding: 15px;
 }
 .amazon-logo{
 height:200px;
 margin: 0;
 
 }
-.compose-section{
+.form-group{
     margin-top: 150px;
+    border-radius: 10px;
+    height: 170px;
+    width: 80%;
+}
+#exampleFormControlTextarea1{
+    height: 100%;
+    border: 1px solid black;
+}
+.email-body{
+    padding-left: 15px;
 }
 .email-title{
     display: flex;
@@ -107,20 +128,34 @@ margin: 0;
 }
 .email-options{
     margin-right: 20px;
-    padding: px;
+    font-size: 20px;
+}
+.email-options, .fa{
+    padding: 8px;
 }
 hr{
     border: 1px solid black;
     width: 90%;
 }
-
-.reply-box{
-    border: 1px solid black;
-    border-radius: 10px;
-    height: 180px;
-    padding: 15px;
-    width: 80%;
-}
 .fa-paperclip{
     font-size: 30px;
 }
+.nav-icons{
+    color: black;
+}
+.nav-icons:hover{
+    color: gray;
+}
+.reply-box-icons{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*
+.reply-box{
+    margin-top: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 170px;
+    width: 80%;
+*/
