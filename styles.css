@@ -1,7 +1,9 @@
-html, body{
+body{
     /*overflow: hidden; /*hiding scrollbars*/
     margin: 0;
     font-family: "mulish", serif;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .container{
