@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" 
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" 
@@ -10,29 +12,75 @@
     href="/Users/johnathannguyen/Desktop/bvt-projects/email-template-with-bootstrap-grid/styles.css">
 </head>
 <body>
-    <div class="containter">
-        <div class="row">
-
+           
+    <div class="container-fluid">
+        <div class="row no-gutters">
             <!--Start of Left Column-->
-            <div class="col-lg-2 email-left">
+            <div class="col-md-2 email-left">
                 <div class="welcome">
                     <i class="fa fa-chrome chrome-icon"></i>
                 Welcome, Johnathan!</div>
                 <button type="button" class="btn btn-warning compose-button">COMPOSE</button>
                     <!--Made the options all empty links-->
-                <p class="inbox-options">
-                    <a class="email-option-links" href=""><b><u><em>Inbox(1)</em></u></b></a><br>
-                    <a class="email-option-links" href="">Tagged</a><br>
-                    <a class="email-option-links" href="">Important</a><br>
-                    <a class="email-option-links" href="">Sent Mail</a><br>
-                    <a class="email-option-links" href="">Drafts</a><br>
-                    <a class="email-option-links" href="">Trash</a>
-                </p>
+                        <div class="d-none d-md-block">  
+                            <ul class="navbar-nav nav-items-align inbox-options">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link email-option-links"><b><u><em>Inbox(1)</em></u></b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-option-links">Tagged</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-option-links">Important</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-option-links">Sent Mail</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-option-links">Drafts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-option-links">Trash</a>
+                                </li>
+                            </ul>
+                         </div>
                 
-            </div>
+            
+                         <!--Navbar-->
+                <div class="d-block d-md-none">
+                    <nav class="navbar navbar-dark" styles="background-color:#423e37">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="navbar-nav nav-items-align">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link email-links"><b><u><em>Inbox(1)</em></u></b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-links">Tagged</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-links">Important</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-links">Sent Mail</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-links">Drafts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link email-links">Trash</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                 </div>
 
+            </div>
+          
             <!-- start of center column-->
-            <div class="col-lg-3 email-center">
+            <div class="col-md-3 email-center">
                 
                 <div class="searchContainer">
                     <a class="nav-icons" href=""><i class="fa fa-search searchIcon"></i></a>
@@ -42,7 +90,7 @@
                 <div class="all-emails">
                     <a class="email-links" href="">
                     <div class="email-1 spacing">
-                        <div class="email-top">  
+                        <div class="email-top d-flex justify-content-between">  
                             <div class="sender">Linkedin</div>
                             <div class="date">2:15 PM</div>
                         </div>
@@ -51,7 +99,7 @@
                     <a class="email-links" href="">
                     <div class="email-2-container">
                         <div class="email-2 spacing">
-                            <div class="email-top">
+                            <div class="email-top d-flex justify-content-between">
                                 <div class="sender">Amazon</div>
                                 <div class="date">Feb 10, 2020</div>
                             </div>
@@ -60,7 +108,7 @@
                     </div></a>
                     <a class="email-links" href="">
                     <div class="email-3 spacing">
-                        <div class="email-top">
+                        <div class="email-top d-flex justify-content-between">
                             <div class="sender">YouTube Music</div>
                             <div class="date">Feb 5, 2020</div>
                         </div>
@@ -70,7 +118,7 @@
             </div> 
 
             <!--Start on right column-->    
-            <div class="col-lg-7 email-right">
+            <div class="col-md-7 email-right">
                 <div class="address">
                     <p>To: haungocvo@gmail.com <br>From: customercare@Amazon.com </p>
                 </div>
@@ -94,34 +142,25 @@
                     </p>
                     <button type="button" class="btn btn-warning track-button">Track your items</button>
                 </div>
-                
-                <div class="reply-box d-flex justify-content-center">
-                    <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="reply-box d-flex justify-content-center">
+                        <div class="form-group">
+                            <textarea class="form-control reply" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
                     </div>
-                </div>
+                
                 <div class="reply-box-icons d-flex justify-content-between align-items-end">
                     <a class="nav-icons" href=""><i class="fa fa-paperclip"></i></a>
-                    <button type="button" class="btn btn-outline-primary">Reply</button>
+                    <button type="button" class="btn btn-outline-primary reply-btn">Reply</button>
                 </div>
-
-
-
-                <!--the code below will have the images inside of a container but without functionality..
-
-
-                <div class="compose-section d-flex justify-content-center">
-                    <div class="reply-box d-flex justify-content-between align-items-end">
-                        <i class="fa fa-paperclip"></i>
-                        <button type="button" class="btn btn-outline-primary">Reply</button>
-                    </div>
-                </div>-->
 
 
 
             </div>
         </div>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
+
 </html>

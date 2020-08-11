@@ -1,21 +1,27 @@
 body{
-    /*overflow: hidden; /*hiding scrollbars*/
+    /*overflow: hidden; /*hiding scroll bars*/
     margin: 0;
     font-family: "mulish", serif;
     overflow-y: auto;
     overflow-x: hidden;
 }
-
-.container{
+.row{
+    height: 100vh;
+}
+.container-fluid{
     margin: 0;
     padding: 0;
 }
+
+
+
 /* left column */
 .compose-button{
     color: white;
     border: none;
     margin-top: 30px;
     margin-bottom: 60px;
+    margin-left: 10px;
     width: 150px;
 
 }
@@ -28,7 +34,8 @@ body{
     padding-left: 30px;
 }
 .inbox-options{
-    line-height: 40px;
+    line-height: 30px;
+    padding-left: 10px;
 }
 .email-option-links{
     color: white;
@@ -52,6 +59,7 @@ a:hover{
     font-size: 13px;
     margin-top: 30px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 .email-links{
     color: black;
@@ -62,8 +70,7 @@ margin-top: 40px;
 border-radius: 10px;
 }
 .email-top{
-    display: flex;
-    justify-content: space-between;
+
     margin-top: 20px;
 }
 .searchContainer {
@@ -100,14 +107,15 @@ border-radius: 10px;
 
 .email-right{
     background-color: #ffffff;
-    height: 100vh;
+    width: 100vw;
 }
 .address{
     font-size: 10px;
     padding: 15px;
 }
 .amazon-logo{
-height:200px;
+width: 80%;
+max-width: 500px;
 margin: 0;
 
 }
@@ -154,11 +162,8 @@ hr{
     padding-right: 10%;
 }
 
-/*
 .reply-box{
-    margin-top: 150px;
-    border: 1px solid black;
-    border-radius: 10px;
-    height: 170px;
-    width: 80%;
-*/
+position: relative;
+width: 100%;
+height: auto;
+}
